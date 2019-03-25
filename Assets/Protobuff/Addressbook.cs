@@ -50,7 +50,7 @@ namespace Google.Protobuf.Examples.AddressBook {
   /// [START messages]
   /// </summary>
   public sealed partial class Person : pb::IMessage<Person> {
-    private static readonly pb::MessageParser<Person> _parser = new pb::MessageParser<Person>(() => new Person());
+    private static readonly pb::MessageParser<Person> _parser = new pb::MessageParser<Person>(() => MessageFactory.GetInstance<Person>(typeof(Person)));
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<Person> Parser { get { return _parser; } }
