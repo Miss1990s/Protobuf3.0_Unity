@@ -289,9 +289,14 @@ namespace Google.Protobuf.Examples.AddressBook {
       }
     }
 
-    #region Nested types
-    /// <summary>Container for nested types declared in the Person message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void Recycle()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        #region Nested types
+        /// <summary>Container for nested types declared in the Person message type.</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       public enum PhoneType {
         [pbr::OriginalName("MOBILE")] Mobile = 0,
@@ -454,7 +459,11 @@ namespace Google.Protobuf.Examples.AddressBook {
           }
         }
 
-      }
+                public void Recycle()
+                {
+                    throw new System.NotImplementedException();
+                }
+            }
 
     }
     #endregion
@@ -583,7 +592,11 @@ namespace Google.Protobuf.Examples.AddressBook {
       }
     }
 
-  }
+        public void Recycle()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 
   #endregion
 

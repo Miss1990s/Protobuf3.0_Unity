@@ -60,7 +60,6 @@ namespace Google.Protobuf
         /// <returns>The number of bytes required to write this message
         /// to a coded output stream.</returns>
         int CalculateSize();
-
         /// <summary>
         /// Descriptor for this message. All instances are expected to return the same descriptor,
         /// and for generated types this will be an explicitly-implemented member, returning the
@@ -83,5 +82,6 @@ namespace Google.Protobuf
         /// <remarks>See the user guide for precise merge semantics.</remarks>
         /// <param name="message">The message to merge with this one. Must not be null.</param>
         void MergeFrom(T message);
+        
     }
 }
